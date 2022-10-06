@@ -1,8 +1,8 @@
-use fruit_container::FruitsContainerTrait;
+use fruit_basket::FruitsContainerTrait;
 use fruit_factory::{FruitFactoryStruct, FruitFactoryTrait};
 
 mod fruit;
-mod fruit_container;
+mod fruit_basket;
 mod fruit_factory;
 
 fn main() {
@@ -11,7 +11,7 @@ fn main() {
     let apple = FruitFactoryStruct::generate_fruit("apple".to_string(), 2.2, "green".to_string());
     let lemon = FruitFactoryStruct::generate_fruit("lemon".to_string(), 3.4, "yellow".to_string());
 
-    let mut fruits_basket = fruit_container::FruitsContainerStruct::new();
+    let mut fruits_basket = fruit_basket::FruitsContainerStruct::new();
     fruits_basket.add(orange);
     fruits_basket.add(apple);
     fruits_basket.add(lemon);

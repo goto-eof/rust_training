@@ -1,4 +1,4 @@
-use crate::a1c::fruit::FruitStruct;
+use super::fruit::FruitStruct;
 
 pub trait FruitFactoryTrait {
     fn generate_fruit(name: String, weight: f32, color: String) -> FruitStruct;

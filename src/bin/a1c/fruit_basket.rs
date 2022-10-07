@@ -1,4 +1,4 @@
-use crate::fruit::FruitStruct;
+use crate::a1c::fruit::FruitStruct;
 
 pub struct FruitsContainerStruct {
     list: Vec<FruitStruct>,
